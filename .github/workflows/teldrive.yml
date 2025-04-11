@@ -2,7 +2,7 @@ name: Build Teldrive
 
 on:
   repository_dispatch:
-    types: [external_tag]
+    types: [teldrive_external_tag]
 
 jobs:
   build:
