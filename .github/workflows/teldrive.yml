@@ -11,9 +11,7 @@ jobs:
       - name: Checkout Source Repository
         uses: actions/checkout@v3
         with:
-          repository: ${{ github.event.client_payload.source_repository }}
-          ref: ${{ github.event.client_payload.tag_name }}
-          token: ${{ secrets.PAT_TOKEN }}
+          repository: ${{ github.event.client_payload.source }}
       
       - name: Set up Go
         uses: actions/setup-go@v5
