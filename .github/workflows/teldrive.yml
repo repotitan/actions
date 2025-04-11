@@ -13,6 +13,7 @@ jobs:
         with:
           repository: tgdrive/teldrive
           token: ${{ secrets.PAT_TOKEN }}
+          fetch-depth: 0
       
       - name: Set up Go
         uses: actions/setup-go@v5
